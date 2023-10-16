@@ -26,7 +26,12 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: lime
+  font:
+    text: Roboto
+    code: Roboto Mono
+
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/tywysocki
@@ -44,10 +49,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-
 copyright: 
-  2023 <a href="https://github.com/tywysocki" target="_blank" rel="noopener">Tyler Wysocki</a>
+  Copyright &copy; 2023 <a href="https://github.com/tywysocki" target="_blank" rel="noopener">Tyler Wysocki</a>
