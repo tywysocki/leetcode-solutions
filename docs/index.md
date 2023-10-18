@@ -1,5 +1,7 @@
 # Home
 
+---
+
 ## Showcasing My Coding Expertise
 
 Welcome to my LeetCode solutions portfolio, a platform where I proudly showcase my coding skills and problem-solving expertise. I've built this resource to not only help you master LeetCode problems but also to demonstrate my abilities and achievements.
