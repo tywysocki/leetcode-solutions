@@ -1,6 +1,9 @@
-# Home
-
 ---
+search:
+  boost: 1 
+---
+
+# **Home**
 
 ## Showcasing My Coding Expertise
 
@@ -12,4 +15,5 @@ Welcome to my LeetCode solutions portfolio, a platform where I proudly showcase 
 
 ## Dive In
 
-[Explore Categories](categories.md)
+[Explore Categories](categories.md){ .md-button }
+
