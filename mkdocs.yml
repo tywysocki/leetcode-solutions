@@ -97,10 +97,10 @@ plugins:
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{categories}/{slug}"
       post_url_max_categories: 2
-      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-      post_slugify_separator: _
+      # post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
+      # post_slugify_separator: _
       post_excerpt: optional
       post_excerpt_max_authors: 2
       post_excerpt_max_categories: 2
@@ -116,10 +116,10 @@ plugins:
       categories: true
       categories_name: Categories
       categories_url_format: "category/{slug}"
-      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-      categories_slugify_separator: _
+      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
+      # categories_slugify_separator: _
       categories_allowed:
         - Easy
         - Medium
