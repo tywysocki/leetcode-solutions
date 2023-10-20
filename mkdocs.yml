@@ -45,7 +45,7 @@ theme:
     - header.autohide
     - navigation.expand
     # - navigation.footer
-    # - navigation.indexes
+    - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
     - navigation.sections
@@ -165,6 +165,7 @@ extra:
       
   # Versioning
   version:
+    default: stable
     provider: mike
 
   # Hide Generator
@@ -237,9 +238,38 @@ markdown_extensions:
 
 # Page Tree
 nav:
-  - Home: 'index.md'
+  - Home:
+    - solutions/README.md
+    - Problem 1: solutions/easy/two-sum.md
+    - Problem 2: solutions/medium/add-two-numbers.md
+    - Problem 3: solutions/medium/longest-substring-without-repeating-characters.md
+    - Problem 4: solutions/hard/median-of-two-sorted-arrays.md
+    - Problem 5: solutions/medium/longest-palindromic-substring.md
+    - Problem 6: solutions/medium/zigzag-conversation.md
+    - Problem 7: solutions/medium/reverse-integer.md
+    - Problem 8: solutions/medium/string-to-integer-atoi.md
+    - Problem 9: solutions/easy/palindrome-number.md
+    - Problem 10: solutions/hard/regular-expression-matching.md
+    - Problem 11: solutions/medium/container-with-most-water.md
+    - Problem 12: solutions/medium/integer-to-roman.md
+    - Problem 13: solutions/easy/roman-to-integer.md
+    - Problem 23: solutions/hard/merge-k-sorted-lists.md
+    - Problem 25: solutions/hard/reverse-nodes-in-k-group.md
+    - Problem 26: solutions/easy/remove-duplicates-from-sorted-array.md
+    - Problem 30: solutions/hard/substring-with-concatenation-of-all-words.md
+    - Problem 32: solutions/hard/longest-valid-parentheses.md
+    - Problem 37: solutions/hard/sudoku-solver.md
+    - Problem 52: solutions/hard/n-queens-2.md
+    - Problem 119: solutions/easy/pascals-triangle-2.md
+    - Problem 195: solutions/easy/tenth-line.md
+    - Problem 343: solutions/medium/integer-break.md
+    - Problem 844: solutions/easy/backspace-string-compare.md
+    - Problem 1269: solutions/hard/number-of-ways-to-stay-in-the-same-place-after-some-steps.md
+    - Problem 1361: solutions/medium/validate-binary-tree-nodes.md
+    - Problem 1458: solutions/hard/max-dot-product-of-two-subsequences.md
+    - Problem 2050: solutions/hard/parallel-courses-3.md
+    - Table: solutions/solutions.md 
   - Featured: 'page2.md'
-  - Solutions: 'solutions.md'
   - Categories: 'categories.md'
   - Tags: 'tags.md'
   - Blog: 'blog/index.md'

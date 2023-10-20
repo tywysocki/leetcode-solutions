@@ -1,8 +1,8 @@
 /* Admontations */
 .md-typeset .admonition,
 .md-typeset details {
-	border-radius: 1%;
-	border-width: 1px;
+	border-radius: 0%;
+	border-collapse: 1px;
 }
 
 /* Tablesort */
@@ -44,10 +44,4 @@ th[role=columnheader]:not(.no-sort):hover:after {
 	max-width: 1440px; 
   }
 
-.md-button {
-	accent-color: #000;
-}
 
-.md-button--primary {
-	color: #000;
-}

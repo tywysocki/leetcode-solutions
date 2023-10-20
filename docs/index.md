@@ -1,9 +1,3 @@
----
-search:
-  boost: 1 
-
----
-
 # Home
 
 [Categories](categories.md){ .md-button .md-button--primary }
