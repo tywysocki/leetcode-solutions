@@ -15,8 +15,8 @@ This website is not just about showcasing my skills; it's also a platform for le
 
 # Key Sections
 
-## [LeetCode Solutions](../solutions/README.md) 
+## [LeetCode Solutions](solutions/README.md) 
 Dive into the world of coding challenges. Explore multiple solutions for each problem, along with detailed explanations.
 
-## [Portfolio](../portfolio/README.md)
+## [Portfolio](portfolio/README.md)
 Explore my iOS development projects. Each project comes with detailed descriptions, technologies used, and outcomes achieved.
