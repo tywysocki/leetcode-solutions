@@ -233,8 +233,7 @@ markdown_extensions:
 
 # Page Tree
 nav:
-  - Home:
-      - home/README.md
+  - Home: README.md
   - LeetCode Solutions:
       - solutions/README.md
       - Tags: 'tags.md'
