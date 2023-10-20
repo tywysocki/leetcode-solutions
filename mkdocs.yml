@@ -1,21 +1,23 @@
 site_name: "LeetCode Solutions"
-site_url: https://www.wysocki.io
+site_url: https://www.wysocki.io/
 site_author: Tyler Wysocki
 site_description: >-
-  LeetCode Solutions Portfolio. 
+  LeetCode Solutions Portfolio
 
 # Repository
 repo_name: tywysocki/leetcode-solutions
 repo_url: https://github.com/tywysocki/leetcode-solutions
 
 # Copyright
-copyright: Copyright &copy; 2023 Tyler Wysocki
+copyright: >
+   Copyright &copy; 2023 Tyler Wysocki -
+   <a href="#__consent">Change cookie settings</a>
 
 # Configuration
 theme:
   name: material
   custom_dir: overrides
-  favicon: images/favicon.ico
+  favicon: images/favicon.png
   logo: assets/logo-final.png
 
   # Icons
@@ -26,12 +28,12 @@ theme:
 
     # Tag Icons
     tag:
-      swift: fontawesome/brands/swift
-      python: fontawesome/brands/python
-      python3: fontawesome/brands/python
-      easy: fontawesome/brands/github
-      medium: fontawesome/solid/dumpster
-      hard: fontawesome/solid/dumpster-fire
+      swift: simple/swift
+      python: simple/python
+      python3: simple/python
+      easy: fontawesome/solid/cake-candles
+      medium: fontawesome/solid/handshake
+      hard: fontawesome/solid/skull
 
   features:
     # - announce.dismiss
@@ -43,34 +45,34 @@ theme:
     - header.autohide
     - navigation.expand
     # - navigation.footer
-    - navigation.indexes
+    # - navigation.indexes
     - navigation.instant
-    # - navigation.instant.prefetch
     - navigation.instant.progress
-    # - navigation.prune
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
-    # - toc.follow
+    - toc.follow
     # - toc.integrate
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: black
       accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -127,6 +129,7 @@ plugins:
         - Swift
         - Python
         - Python3
+        - String
       categories_toc: true
       pagination: true
       pagination_per_page: 10
@@ -173,7 +176,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/tywysocki
-    - icon: fontawesome/regular/gem
+    - icon: simple/leetcode
       link: https://leetcode.com/tywysocki
 
 
@@ -184,6 +187,7 @@ extra_css:
 
 # Custom JavaScript
 extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
 
 
@@ -209,11 +213,15 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+      use_pygments: true
+      auto_title: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -225,8 +233,6 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
   - pymdownx.tilde
 
 # Page Tree

@@ -1,8 +1,3 @@
----
-hide:
-
----
-
 # **Solutions**
 
 | #    | Problem Title                                                            | Difficulty |
@@ -14,7 +9,7 @@ hide:
 | 5    | [Longest Palindromic Substring]()                                        | Medium     |
 | 6    | [ZigZag Conversation]()                                                  | Medium     |
 | 7    | [Reverse Integer]()                                                      | Medium     |
-| 8    | [String to Integer]()                                                    | Medium     |
+| 8    | [String to Integer (atoi)](solutions/medium/string-to-integer-atoi.md)   | Medium     |
 | 9    | [Palindrome Number]()                                                    | Easy       |
 | 10   | [Regular Expression Matching]()                                          | Hard       |
 | 11   | [Container With Most Water]()                                            | Medium     |
