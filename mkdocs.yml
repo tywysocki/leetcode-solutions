@@ -1,4 +1,4 @@
-site_name: "LeetCode Solutions"
+site_name: "wysocki.io"
 site_url: https://www.wysocki.io/
 site_author: Tyler Wysocki
 site_description: >-
@@ -10,8 +10,8 @@ repo_url: https://github.com/tywysocki/leetcode-solutions
 
 # Copyright
 copyright: >
-   Copyright &copy; 2023 Tyler Wysocki -
-   <a href="#__consent">Change cookie settings</a>
+  Copyright &copy; 2023 Tyler Wysocki -
+  <a href="#__consent">Change cookie settings</a>
 
 # Configuration
 theme:
@@ -22,7 +22,6 @@ theme:
 
   # Icons
   icon:
-
     # Repo Icon
     repo: fontawesome/brands/github
 
@@ -44,20 +43,20 @@ theme:
     - content.tooltips
     - header.autohide
     - navigation.expand
-    # - navigation.footer
+    - navigation.footer
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
     - navigation.sections
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    - toc.integrate
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -81,7 +80,7 @@ theme:
 plugins:
   # Tags
   - tags:
-      tags_file: tags.md
+      tags_file: 'tags.md'
 
   # Social Cards
   - social:
@@ -90,7 +89,7 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
-  # Blog Posts: https://squidfunk.github.io/mkdocs-material/plugins/blog/#meta.date-custom-date    
+  # Blog Posts: https://squidfunk.github.io/mkdocs-material/plugins/blog/#meta.date-custom-date
   - blog:
       blog_dir: blog
       blog_toc: true
@@ -139,7 +138,6 @@ plugins:
       pagination_keep_content: false
       authors: true
 
-
 # Additional configuration
 extra:
   # Tag id: icon
@@ -154,7 +152,7 @@ extra:
     # Cookies Message
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
@@ -162,7 +160,7 @@ extra:
     actions:
       - accept
       - manage
-      
+
   # Versioning
   version:
     default: stable
@@ -180,17 +178,14 @@ extra:
     - icon: simple/leetcode
       link: https://leetcode.com/tywysocki
 
-
 # Custom CSS
 extra_css:
   - stylesheets/extra.css
-
 
 # Custom JavaScript
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
-
 
 # Extensions
 markdown_extensions:
@@ -239,37 +234,39 @@ markdown_extensions:
 # Page Tree
 nav:
   - Home:
-    - solutions/README.md
-    - Problem 1: solutions/easy/two-sum.md
-    - Problem 2: solutions/medium/add-two-numbers.md
-    - Problem 3: solutions/medium/longest-substring-without-repeating-characters.md
-    - Problem 4: solutions/hard/median-of-two-sorted-arrays.md
-    - Problem 5: solutions/medium/longest-palindromic-substring.md
-    - Problem 6: solutions/medium/zigzag-conversation.md
-    - Problem 7: solutions/medium/reverse-integer.md
-    - Problem 8: solutions/medium/string-to-integer-atoi.md
-    - Problem 9: solutions/easy/palindrome-number.md
-    - Problem 10: solutions/hard/regular-expression-matching.md
-    - Problem 11: solutions/medium/container-with-most-water.md
-    - Problem 12: solutions/medium/integer-to-roman.md
-    - Problem 13: solutions/easy/roman-to-integer.md
-    - Problem 23: solutions/hard/merge-k-sorted-lists.md
-    - Problem 25: solutions/hard/reverse-nodes-in-k-group.md
-    - Problem 26: solutions/easy/remove-duplicates-from-sorted-array.md
-    - Problem 30: solutions/hard/substring-with-concatenation-of-all-words.md
-    - Problem 32: solutions/hard/longest-valid-parentheses.md
-    - Problem 37: solutions/hard/sudoku-solver.md
-    - Problem 52: solutions/hard/n-queens-2.md
-    - Problem 119: solutions/easy/pascals-triangle-2.md
-    - Problem 195: solutions/easy/tenth-line.md
-    - Problem 343: solutions/medium/integer-break.md
-    - Problem 844: solutions/easy/backspace-string-compare.md
-    - Problem 1269: solutions/hard/number-of-ways-to-stay-in-the-same-place-after-some-steps.md
-    - Problem 1361: solutions/medium/validate-binary-tree-nodes.md
-    - Problem 1458: solutions/hard/max-dot-product-of-two-subsequences.md
-    - Problem 2050: solutions/hard/parallel-courses-3.md
-    - Table: solutions/solutions.md 
-  - Featured: 'page2.md'
-  - Categories: 'categories.md'
-  - Tags: 'tags.md'
-  - Blog: 'blog/index.md'
+      - home/README.md
+  - LeetCode Solutions:
+      - solutions/README.md
+      - Tags: 'tags.md'
+      - Problem 1: 'solutions/easy/two-sum.md'
+      - Problem 2: 'solutions/medium/add-two-numbers.md'
+      - Problem 3: 'solutions/medium/longest-substring-without-repeating-characters.md'
+      - Problem 4: 'solutions/hard/median-of-two-sorted-arrays.md'
+      - Problem 5: 'solutions/medium/longest-palindromic-substring.md'
+      - Problem 6: 'solutions/medium/zigzag-conversation.md'
+      - Problem 7: 'solutions/medium/reverse-integer.md'
+      - Problem 8: "solutions/medium/string-to-integer-atoi.md"
+      - Problem 9: "solutions/easy/palindrome-number.md"
+      - Problem 10: "solutions/hard/regular-expression-matching.md"
+      - Problem 11: "solutions/medium/container-with-most-water.md"
+      - Problem 12: solutions/medium/integer-to-roman.md
+      - Problem 13: solutions/easy/roman-to-integer.md
+      - Problem 23: solutions/hard/merge-k-sorted-lists.md
+      - Problem 25: solutions/hard/reverse-nodes-in-k-group.md
+      - Problem 26: solutions/easy/remove-duplicates-from-sorted-array.md
+      - Problem 30: solutions/hard/substring-with-concatenation-of-all-words.md
+      - Problem 32: solutions/hard/longest-valid-parentheses.md
+      - Problem 37: solutions/hard/sudoku-solver.md
+      - Problem 52: solutions/hard/n-queens-2.md
+      - Problem 119: solutions/easy/pascals-triangle-2.md
+      - Problem 195: solutions/easy/tenth-line.md
+      - Problem 343: solutions/medium/integer-break.md
+      - Problem 844: solutions/easy/backspace-string-compare.md
+      - Problem 1269: solutions/hard/number-of-ways-to-stay-in-the-same-place-after-some-steps.md
+      - Problem 1361: solutions/medium/validate-binary-tree-nodes.md
+      - Problem 1458: solutions/hard/max-dot-product-of-two-subsequences.md
+      - Problem 2050: solutions/hard/parallel-courses-3.md
+  - Portfolio:
+      - portfolio/README.md
+      - portfolio/openai.md
+  - Blog: "blog/index.md"

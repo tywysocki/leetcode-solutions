@@ -8,7 +8,10 @@ tags:
 ---
 
 # String to Integer (atoi)
+
 ---
+
+# Description
 
 !!! question "LeetCode Problem 8: String to Integer (atoi)"
 
@@ -35,12 +38,13 @@ tags:
     - **Do not ignore** any characters other than the leading whitespace or the rest of the string after the digits.
     ```
 
-Here are some example cases:
+# Examples
 
 ```{ .lang title="Example 1" }
 
 Input: s = "42"
 Output: 42
+
 Explanation: The underlined characters are what is read in, the caret is the current reader position.
 Step 1: "42" (no characters read because there is no leading whitespace)
             
@@ -56,6 +60,7 @@ Since 42 is in the range [-2^31, 2^31 - 1], the final result is 42.
 
 Input: s = "-42"
 Output: -42
+
 Explanation:
 Step 1: "    -42" (leading whitespace is read and ignored)
                 
@@ -71,6 +76,7 @@ Since -42 is in the range [-2^31, 2^31 - 1], the final result is -42.
 
 Input: s = "4193 with words"
 Output: 4193
+
 Explanation:
 Step 1: "4193 with words" (no characters read because there is no leading whitespace)
             
@@ -82,11 +88,16 @@ The parsed integer is 4193.
 Since 4193 is in the range [-2^31, 2^31 - 1], the final result is 4193.
 ```
 
-# Intuition
+--
+
+# Solution
+
+
+## Intuition
 
 The problem requires parsing a given string to convert it into a 32-bit signed integer while considering leading whitespace, signs, and integer overflow. The solution involves careful handling of each step of the algorithm.
 
-# Approach
+## Approach
 
 1. Trim leading whitespace from the input string using `trimmingCharacters(in:)`.
 
@@ -98,13 +109,13 @@ The problem requires parsing a given string to convert it into a 32-bit signed i
 
 5. Return the final integer result with the appropriate sign.
 
-# Complexity
+## Complexity
 
 - **Time complexity**: $O(n)$ where $n$ is the length of the input string. We iterate through the string once.
 
 - **Space complexity**: $O(1)$ as we use a constant amount of extra space for variables.
 
-# Code
+## Code
 
 ```swift
 class Solution {
