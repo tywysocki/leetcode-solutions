@@ -9,9 +9,7 @@ tags:
 
 # String to Integer (atoi)
 
----
-
-# Description
+## Description
 
 !!! question "LeetCode Problem 8: String to Integer (atoi)"
 
@@ -38,7 +36,7 @@ tags:
     - **Do not ignore** any characters other than the leading whitespace or the rest of the string after the digits.
     ```
 
-# Examples
+## Examples
 
 ```{ .lang title="Example 1" }
 
@@ -89,9 +87,6 @@ Since 4193 is in the range [-2^31, 2^31 - 1], the final result is 4193.
 ```
 
 --
-
-# Solution
-
 
 ## Intuition
 
