@@ -1,4 +1,7 @@
 ---
+title: Two Sum
+description: A solution to LeetCode problem 1
+icon: material/check
 comments: true
 tags:
     - Easy
@@ -7,7 +10,7 @@ tags:
     - Array
 ---
 
-# Two Sum
+## Description
 
 !!! question "LeetCode Problem 1: Two Sum"
 
@@ -25,10 +28,12 @@ tags:
     3. Input: `nums = [3, 3], target = 6`
     Output: `[0, 1]`
 
-## Intuition
+## Solution
+
+### Intuition
 To efficiently solve the Two Sum problem, we'll utilize a hash map to keep track of the numbers we've encountered and their indices while iterating through the input array. This approach allows us to swiftly determine if the complement of the current number (i.e., `target - currentNumber`) has been seen before.
 
-## Approach
+### Approach
 Here's a step-by-step explanation of the approach:
 
 1. Create an empty dictionary to store numbers and their indices. This dictionary will help us check whether we've encountered a number and its index before.
@@ -43,16 +48,16 @@ Here's a step-by-step explanation of the approach:
 
 6. If no valid solution is found after iterating through the entire array, return an empty array to indicate that there's no valid pair of numbers that sum up to the target.
 
-## Complexity
+### Complexity
 Let's analyze the time and space complexity of our solution:
 
-### Time Complexity
+#### Time Complexity
 The time complexity of this solution is O(n), where `n` is the number of elements in the input array `nums`. We iterate through the array once, checking and updating the dictionary.
 
-### Space Complexity
-The space complexity is O(n) as well. In the worst case, we may need to store all the elements and their indices in the dictionary, resulting in linear space usage.
+#### Space Complexity
+The space complexity is $O(n)$ as well. In the worst case, we may need to store all the elements and their indices in the dictionary, resulting in linear space usage.
 
-## Code
+### Code
 Here's the Swift code implementing the Two Sum problem solution using the described approach:
 
 ```swift
@@ -79,3 +84,4 @@ class Solution {
         return []
     }
 }
+```

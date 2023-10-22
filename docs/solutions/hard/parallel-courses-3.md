@@ -1,14 +1,14 @@
 ---
+title: Parallell Courses III
+description: A solution to LeetCode problem 2050
+icon: material/check
 comments: true
-
 tags:
     - Swift
     - Hard
     - Topological Sorting
     - Graph
 ---
-
-# Parallell Courses III
 
 ## Description
 
@@ -28,14 +28,13 @@ tags:
 
 ## Solution
 
-/// tab | Intuition
-    new: true
-    select: true
+Topological Sorting
+
+### Intuition
 
 To solve this problem, we can use a topological sorting approach. We'll build a directed graph representing the course prerequisites and track the time required to complete each course. By iteratively selecting courses that have all their prerequisites met, we can minimize the time needed to complete all courses.
-///
 
-/// tab | Approach
+### Approach
 1. Create a graph representation of course prerequisites using an adjacency list. Initialize an array `inDegree` to store the in-degrees of each course, and an array `courseTime` to store the time required to complete each course.
 
 2. Populate the graph based on the relations provided in the input.
@@ -54,15 +53,15 @@ To solve this problem, we can use a topological sorting approach. We'll build a 
 6. After the loop, if `completedCourses` is equal to `n`, we have completed all courses, and the value of `months` is the minimum time required. Return `months`.
 
 7. If `completedCourses` is less than `n`, it means there's a cycle in the course dependencies, and it's not possible to complete all courses. Return -1 in this case.
-///
 
-/// tab | Complexity
+
+### Complexity
 
 - Time complexity: O(n + m), where n is the number of courses and m is the number of prerequisite relationships.
 - Space complexity: O(n), where n is the number of courses.
-///
 
-/// tab | Code
+
+### Code
 ``` { .swift .select }
 class Solution {
     func minimumTime(_ n: Int, _ relations: [[Int]], _ time: [Int]) -> Int {

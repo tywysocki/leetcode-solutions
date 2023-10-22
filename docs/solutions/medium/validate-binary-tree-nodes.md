@@ -1,12 +1,17 @@
 ---
+title: Validate Binary Tree Nodes
+desription: A Solution to LeetCode Problem 1361
+icon: material/check
 comments: true
-
 tags:
     - Medium
+    - Tree
+    - Depth First Search
+    - Breadth-First Search
+    - Union Find
+    - Graph
     - Binary Tree
 ---
-
-# Validate Binary Tree Nodes
 
 ## Description
 
@@ -20,9 +25,7 @@ tags:
 
 ## Solution
 
-/// tab | Intuition
-    new: true
-    select: true
+### Intuition
 
 To solve this problem, we need to validate whether the given list of binary tree nodes forms exactly one valid binary tree. A valid binary tree has the following properties:
 
@@ -32,9 +35,9 @@ To solve this problem, we need to validate whether the given list of binary tree
 4. The tree must be connected.
 
 We'll use these properties to validate the tree.
-///
-    
-/// tab | Approach
+
+### Approach
+
 We can approach this problem by simulating the creation of a binary tree while keeping track of the parent of each node. We'll use two arrays: `parent` to store the parent of each node, and `seen` to check if we've seen a node before. The idea is to iterate through the given `leftChild` and `rightChild` arrays and ensure that each child node has only one parent. Additionally, we will check if the tree is connected.
 
 1. Initialize two arrays, `parent` and `seen`, both of size `n`. Initialize `parent` with -1 and `seen` as false for all nodes.
@@ -48,14 +51,14 @@ We can approach this problem by simulating the creation of a binary tree while k
 3. After iterating through both arrays, check if there is one and only one root node (a node without a parent). Count the number of root nodes by counting the nodes with -1 in the `parent` array.
 
 4. If there is exactly one root node (count of root nodes is 1) and there are no cycles (all nodes are connected and have only one parent), return true. Otherwise, return false.
-///
 
-/// tab | Complexity
+
+### Complexity
 - Time complexity: **O(n)** where n is the number of nodes. We iterate through the `leftChild` and `rightChild` arrays once, each taking **O(n)** time. The depth-first search for connectedness also takes **O(n)** time.
 - Space complexity: **O(n)** to store the `parent`, `seen`, and `visited` arrays.
-///
 
-/// tab | Code
+
+### Code
 ``` { .swift .select }
 
 func validateBinaryTreeNodes(_ n: Int, _ leftChild: [Int], _ rightChild: [Int]) -> Bool {
@@ -121,4 +124,3 @@ func validateBinaryTreeNodes(_ n: Int, _ leftChild: [Int], _ rightChild: [Int]) 
     return true
 }
 ```
-///

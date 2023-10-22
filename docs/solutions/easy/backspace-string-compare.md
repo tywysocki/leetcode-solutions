@@ -1,45 +1,50 @@
 ---
+title: Backspace String Compare
+description: A Solution to LeetCode Problem 844
+icon: material/check
 comments: true
-
 tags:
   - Easy
   - Swift
+  - Two Pointers
+  - String
+  - Stack 
+  - Simulation
 ---
-
-# Backspace String Compare
 
 ## Description
 
-!!! question "LeetCode Problem . Backspace String Compare"
+Given two strings `#!swift s` and `#!swift t`, return `#!swift true` if they are equal when both are typed into empty text editors. `'#'` means a backspace character.
 
-    Given two strings `s` and `t`, return `true` if they are equal when both are typed into empty text editors. `'#'` means a backspace character.
+Note that after backspacing an empty text, the text will continue empty.
 
-    Note that after backspacing an empty text, the text will continue empty.
+=== "Example 1"
 
-    ``` { .lang title="Example 1" }
+    ``` { .markdown title="" }
     Input: s = "ab#c", t = "ad#c"
     Output: true
     Explanation: Both s and t become "ac".
     ```
+=== "Example 2"
 
-    ``` { .lang title="Example 2" }
+    ``` { .markdown title="" }
     Input: s = "ab##", t = "c#d#"
     Output: true
     Explanation: Both s and t become "".
     ```
+=== "Example 3"
 
-    ``` { .lang title="Example 3" }
+    ``` { .markdown title="" }
     Input: s = "a#c", t = "b"
     Output: false
     Explanation: s becomes "c" while t becomes "b".
     ```
 
+---
 
 ## Solution
 
-```
 Backspace String Compare using Stack-Based Simulation
-```
 
 ### Intuition
 

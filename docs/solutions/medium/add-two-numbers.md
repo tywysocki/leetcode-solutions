@@ -1,4 +1,7 @@
 ---
+title: Add Two Numbers
+description: A solution to LeetCode problem 2
+icon: material/check
 comments: true
 tags:
     - Medium
