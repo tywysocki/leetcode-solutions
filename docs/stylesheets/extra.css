@@ -1,8 +1,8 @@
 /* Admontations */
 .md-typeset .admonition,
 .md-typeset details {
-	border-radius: 0%;
-	border-collapse: 1px;
+	border-radius: 2px;
+	padding: 0px;
 }
 
 /* Tablesort */

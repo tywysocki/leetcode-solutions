@@ -2,7 +2,7 @@ site_name: "wysocki.io"
 site_url: https://www.wysocki.io/
 site_author: Tyler Wysocki
 site_description: >-
-  Tyler Wysocki's Portfolio
+  Tyler Wysocki's Portfolio: LeetCode problem solutions, projects, and more.
 
 # Repository
 repo_name: tywysocki/leetcode-solutions
@@ -206,7 +206,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tilde
 
-# Page Tree
+########## Navigation ##########
 nav:
   - Home: README.md
   - LeetCode:
