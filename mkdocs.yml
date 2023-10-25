@@ -189,6 +189,7 @@ nav:
       - Substring With Concatenation of All Words: 'solutions/hard/substring-with-concatenation-of-all-words.md'
       - Longest Valid Parentheses: 'solutions/hard/longest-valid-parentheses.md'
       - Sudoku Solver: 'solutions/hard/sudoku-solver.md'
+      - Wildcard Matching: 'solutions/hard/wildcard-matching-45.md'
       - N-Queens 2: 'solutions/hard/n-queens-2.md'
       - Pascal's Triangle 2: 'solutions/easy/pascals-triangle-2.md'
       - Tenth Line: 'solutions/easy/tenth-line.md'
