@@ -1,1 +1,1 @@
-# leetcode-solutions
+# wysocki.io
