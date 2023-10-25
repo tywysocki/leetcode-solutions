@@ -40,8 +40,8 @@ We aim to find the maximum sum of a non-empty subsequence with the constraint th
 4. The result is the maximum value in the 'dp' array.
 
 ## Complexity
-- Time complexity: O(n) - We iterate through the 'nums' array once.
-- Space complexity: O(n) - We use an array 'dp' and a deque for storage.
+- Time complexity: $O(n)$ - We iterate through the 'nums' array once.
+- Space complexity: $O(n)$ - We use an array 'dp' and a deque for storage.
 
 ```swift
 class Solution {

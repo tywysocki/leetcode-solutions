@@ -62,8 +62,8 @@ To solve this problem, we can simulate the typing process for both strings `s` a
 
 ### Complexity
 
-- Time complexity: O(n), where n is the length of the longer string between `s` and `t`. We iterate through both strings once.
-- Space complexity: O(n), as we use a stack to store the processed characters.
+- Time complexity: $O(n)$, where $n$ is the length of the longer string between `s` and `t`. We iterate through both strings once.
+- Space complexity: $O(n)$, as we use a stack to store the processed characters.
 
 ### Code
 

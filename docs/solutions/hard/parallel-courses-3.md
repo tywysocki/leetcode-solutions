@@ -57,8 +57,8 @@ To solve this problem, we can use a topological sorting approach. We'll build a 
 
 ### Complexity
 
-- Time complexity: O(n + m), where n is the number of courses and m is the number of prerequisite relationships.
-- Space complexity: O(n), where n is the number of courses.
+- Time complexity: $O(n + m)$, where $n$ is the number of courses and $m$ is the number of prerequisite relationships.
+- Space complexity: $O(n)$, where $n$ is the number of courses.
 
 
 ### Code

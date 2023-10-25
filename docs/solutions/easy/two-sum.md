@@ -29,12 +29,9 @@ tags:
     Output: `[0, 1]`
 
 ## Solution
-
-### Intuition
 To efficiently solve the Two Sum problem, we'll utilize a hash map to keep track of the numbers we've encountered and their indices while iterating through the input array. This approach allows us to swiftly determine if the complement of the current number (i.e., `target - currentNumber`) has been seen before.
 
 ### Approach
-Here's a step-by-step explanation of the approach:
 
 1. Create an empty dictionary to store numbers and their indices. This dictionary will help us check whether we've encountered a number and its index before.
 
@@ -52,7 +49,7 @@ Here's a step-by-step explanation of the approach:
 Let's analyze the time and space complexity of our solution:
 
 #### Time Complexity
-The time complexity of this solution is O(n), where `n` is the number of elements in the input array `nums`. We iterate through the array once, checking and updating the dictionary.
+The time complexity of this solution is $O(n)$, where $n$ is the number of elements in the input array `nums`. We iterate through the array once, checking and updating the dictionary.
 
 #### Space Complexity
 The space complexity is $O(n)$ as well. In the worst case, we may need to store all the elements and their indices in the dictionary, resulting in linear space usage.

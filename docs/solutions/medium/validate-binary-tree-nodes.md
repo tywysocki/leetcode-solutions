@@ -54,8 +54,8 @@ We can approach this problem by simulating the creation of a binary tree while k
 
 
 ### Complexity
-- Time complexity: **O(n)** where n is the number of nodes. We iterate through the `leftChild` and `rightChild` arrays once, each taking **O(n)** time. The depth-first search for connectedness also takes **O(n)** time.
-- Space complexity: **O(n)** to store the `parent`, `seen`, and `visited` arrays.
+- Time complexity: $O(n)$ where $n$ is the number of nodes. We iterate through the `leftChild` and `rightChild` arrays once, each taking $O(n)$ time. The depth-first search for connectedness also takes $O(n)$ time.
+- Space complexity: $O(n)$ to store the `parent`, `seen`, and `visited` arrays.
 
 
 ### Code

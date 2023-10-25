@@ -37,10 +37,10 @@ To add two numbers as linked lists, we need to simulate the addition process, ju
 ## Complexity
 
 ### Time Complexity
-- We traverse both linked lists once, so the time complexity is O(max(N, M)), where N and M are the lengths of the input linked lists.
+- We traverse both linked lists once, so the time complexity is $O(max(N, M))$, where $N$ and $M$ are the lengths of the input linked lists.
 
 ### Space Complexity
-- We use a few extra pointers and variables, but the space complexity is O(max(N, M)) as we need to store the result.
+- We use a few extra pointers and variables, but the space complexity is $O(max(N, M))$ as we need to store the result.
 
 ## Code
 
